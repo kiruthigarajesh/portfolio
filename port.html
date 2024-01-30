@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/820a25f821.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          
+          <h1>Hi, I'm <span>KIRUTHIGA.R</span> </h1>
+          <p>Currently pursuing CSE in R.M.K Engineering College</p>
+
+        
+      </div>
+    </div>
+</div>
+<!--- ------about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/3.jpeg" alt="logo">
+           </div>
+      <div class="about-col-2">
+        <h1 class="subtitle">About Me</h1>
+        <p> 
+          I'm a dedicated and enthusiastic second-year B.E 
+          Computer Science Engineering student at RMK Engineering College, 
+          Thiruvallur, with a strong drive for learning and innovation.
+          As a firm believer in lifelong learning, I'm constantly seeking new
+          challenges and opportunities to expand my knowledge and skills.
+          My goal is to leverage my technical expertise and creative talents to
+          make a positive impact in the world of technology and multimedia.
+          I'm always open to collaboration and excited to connect with
+          like-minded individuals who share my passion.
+
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>C programming</span></li>
+          <li><span>Java programming</span></li>
+          <li><span>Web Developement</span></li>
+          <li><span>Excel</span></li>
+        </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022</span><br>Green Park ,Namakkal</li>
+            <li><span>2026</span><br>BE-R.M.K Engineering College</li>
+          </ul>
+      </div>
+      
+      </div>
+    </div>
+</div>
+<!--------portfolio-->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Soft Skill Development.jpg">
+        <div class="layer">
+          <h3>Smart Tracking System</h3>
+          <p>The system provides the feature to track the location exactly by sending 
+            latitude and longitude.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/tcs.png">
+        <div class="layer">
+        <h3>Online Shopping App</h3>
+          <p>The app helps you for easy shopping
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+      <div class="work">
+        <img src="images/Screenshot (173).png">
+        <div class="layer">
+        <h3>Music app</h3>
+          <p>The system provides an feature to hear music in offline.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!--------contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>
+        kiru22069.cs@rmkec.ac.in</p>
+      <p><i class="fa-solid fa-phone"></i> 9042789978</p>
+      <div class="social-icons">
+        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kiruthiga-r-47628b262/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="www.twitter.com">
+          <i class="fa-brands fa-x-twitter"></i>
+          </a>
+      </div>
+      <a href="images/my-cv (2).pdf" download class="btn btn2">Download CV</a>
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+    </div>
+  </div>
+ </div>
+ <div class="copyright">
+    <p>copyright @Kiruthiga</p>
+ </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+
+  </body>
+</html>
